@@ -31,6 +31,8 @@ function code_output() {
 
 }
 
+//////////////////////////////////////// FUNCTION TO MAKE HTML INPUT APPEAR AS BOLD !!NO IMPACT ON OUTPUT!! ////////////////////////////////////////
+
 function bold_text(){
 
   var target = document.getElementById("html_inputs");
@@ -47,33 +49,46 @@ function bold_text(){
 }
 
 
+//////////////////////////////////////// TAGS FUNCTIONS ////////////////////////////////////////
 
 function add_h1() {
   var sNewText = "<h1></h1>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }
 
 function add_h2() {
   var sNewText = "<h2></h2>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }
 
 function add_h3() {
   var sNewText = "<h3></h3>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }
 
 function add_h4() {
   var sNewText = "<h4></h4>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }
 
 function add_h5() {
   var sNewText = "<h5></h5>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }
 
 function add_h6() {
   var sNewText = "<h6></h6>"
-  document.getElementById("html_inputs").innerHTML += sNewText;
+  var sHTML_Input = document.getElementById("html_inputs").value; 
+  var sFusedText = sHTML_Input + sNewText;
+  document.getElementById("html_inputs").value = sFusedText;
 }

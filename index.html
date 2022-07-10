@@ -17,11 +17,16 @@
 </header>
 
 <div id="buttons_area">
-    <button onclick="bold_text()">bold</button>
+
+    <p>Mettre le texte HTML en gras :</p>
+
+    <button onclick="bold_text()">bold</button> 
+
+    <p>Maximum de caractères HTML : </p>
+
     <input id="char_max_number" type="number" step="10" value="200">
 
-    <label for="html_tags_list">Balise HTML</label>
-
+    <p>Balise HTML :</p>
     
     <button onclick="add_h1()">Titre h1</button>
     <button onclick="add_h2()">Titre h2</button>
@@ -35,11 +40,11 @@
 
 <div id="inputs_area">
   
-    <textarea name="html_inputs" id="html_inputs" cols="30" rows="10" placeholder="Code HTML" autocomplete="on" onKeyUp="code_output()"></textarea>
+    <textarea name="html_inputs" id="html_inputs" cols="50" rows="20" placeholder="Code HTML" autocomplete="on" onKeyUp="code_output()"></textarea>
 
-    <textarea name="css_inputs" id="css_inputs" cols="30" rows="10" placeholder="Code CSS" autocomplete="on" onKeyUp="code_output()"></textarea>
+    <textarea name="css_inputs" id="css_inputs" cols="50" rows="20" placeholder="Code CSS" autocomplete="on" onKeyUp="code_output()"></textarea>
 
-    <textarea name="js_inputs" id="js_inputs" cols="30" rows="10" placeholder="Code JS" autocomplete="on" onKeyUp="code_output()"></textarea>
+    <textarea name="js_inputs" id="js_inputs" cols="50" rows="20" placeholder="Code JS" autocomplete="on" onKeyUp="code_output()"></textarea>
 
 </div>
 
@@ -50,27 +55,15 @@
 
 </div>
 
-<!-- <div id="container" style="width:40%; height:50px; border:1px solid black;">
-    <div id="progress-bar" style="width:30%";
-         background-image:url(someImage.png);
-         height:45px;">
-    </div>
-  </div> -->
-
-
 <div id="output_area">
 
-        <figure id="output_result"></figure>
+    <p>Résultat :</p>
+    <p id="output_result"></p>
         
 </div>
 
-
-
-    <div id="output_length"></div>
-</div>
 <div id="text_length" hidden></div>
 <div id="hidden_html" hidden></div>
-<!-- <div id="progress"></div> -->
 
 </body>
 </html>

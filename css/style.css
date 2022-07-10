@@ -4,14 +4,43 @@
   margin: 10px 10px 10px 10px;
 }
 
+textarea {
+  margin: 10px;
+}
+
 textarea:focus {
-  background-color: lightgreen;
   transition-duration: 0.5s;
+  border: 2px solid;
+  margin: 8px;
+}
+
+#html_inputs:focus {
+  background-color: lightgreen;
+}
+
+#css_inputs:focus {
+  background-color: lightcoral;
+}
+
+#js_inputs:focus {
+  background-color: lightskyblue;
 }
 
 #progress {
   background: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 255, 0.5);
-  color: cadetblue;
-  width:25%
+  /* color: black; */
+  width:25%;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-bar {
+  background: lightskyblue;
+}
+
+#output_result {
+  border: solid 2px;
+  min-height: 30vh;
 }
