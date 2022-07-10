@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Editor</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/codedit.js"></script>
+
+</head>
+<body>
+    
+<header>
+    <h1>Editeur HTML/CSS</h1>
+</header>
+
+<div id="buttons_area">
+    <button onclick="bold_text()">bold</button>
+    <input id="char_max_number" type="number" step="10" value="200">
+
+    <label for="html_tags_list">Balise HTML</label>
+
+    
+    <button onclick="add_h1()">Titre h1</button>
+    <button onclick="add_h2()">Titre h2</button>
+    <button onclick="add_h3()">Titre h3</button>
+    <button onclick="add_h4()">Titre h4</button>
+    <button onclick="add_h5()">Titre h5</button>
+    <button onclick="add_h6()">Titre h6</button>
+
+</div>
+
+
+<div id="inputs_area">
+  
+    <textarea name="html_inputs" id="html_inputs" cols="30" rows="10" placeholder="Code HTML" autocomplete="on" onKeyUp="code_output()"></textarea>
+
+    <textarea name="css_inputs" id="css_inputs" cols="30" rows="10" placeholder="Code CSS" autocomplete="on" onKeyUp="code_output()"></textarea>
+
+    <textarea name="js_inputs" id="js_inputs" cols="30" rows="10" placeholder="Code JS" autocomplete="on" onKeyUp="code_output()"></textarea>
+
+</div>
+
+<div id="progress_bar">
+
+    <label for="file">File progress:</label>
+    <progress id="progress" max="100" value="0"></progress>
+
+</div>
+
+<!-- <div id="container" style="width:40%; height:50px; border:1px solid black;">
+    <div id="progress-bar" style="width:30%";
+         background-image:url(someImage.png);
+         height:45px;">
+    </div>
+  </div> -->
+
+
+<div id="output_area">
+
+        <figure id="output_result"></figure>
+        
+</div>
+
+
+
+    <div id="output_length"></div>
+</div>
+<div id="text_length" hidden></div>
+<div id="hidden_html" hidden></div>
+<!-- <div id="progress"></div> -->
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+#inputs_area {
+  display: flexbox;
+  flex-direction: row;
+  margin: 10px 10px 10px 10px;
+}
+
+textarea:focus {
+  background-color: lightgreen;
+  transition-duration: 0.5s;
+}
+
+#progress {
+  background: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 255, 0.5);
+  color: cadetblue;
+  width:25%
+}
